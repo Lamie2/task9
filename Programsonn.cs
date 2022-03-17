@@ -9,17 +9,20 @@ namespace task9
 
             #region task1
 
+            //Console.WriteLine("sozu daxil edin");
+            //string word = Console.ReadLine();
+            //Console.WriteLine("axtardiginiz xarakteri daxil edin");
+            //string searchLetterString = Console.ReadLine();
+            //char searchLetter = searchLetterString[0];
+            //int wantedIndex = FindLetterIndex(word, searchLetter);
+            //Console.WriteLine("Cavab: " + wantedIndex);
 
-            //Console.WriteLine("axtardiginiz deyeri daxil edin");
-            //string valstr = Console.ReadLine();
-            //int val = Convert.ToInt32(valstr);
-            //int wantedIndex = FindLetterIndex(val, i);
             #endregion
 
 
             #region task2
 
-            
+
             //int number = 26;
             //int SqrtRt = FindSqrt(number);
             //Console.WriteLine(SqrtRt);
@@ -27,7 +30,7 @@ namespace task9
 
             #region task3  
 
-            //int n = 535;                                     //OKAY
+            //int n = 535;
             //int sum = FindSumOfNumber(n);
             //Console.WriteLine(sum);
             #endregion
@@ -43,8 +46,12 @@ namespace task9
             #region task 5
 
             //int[] NumArray = { 7, -4, -8, 15 };
-            //int PositiveNums = MakePositive(NumArray);
-            //Console.WriteLine($"positive array: {PositiveNums}");
+            //int[] PositiveNums = MakePositive(NumArray);
+            //for (int i = 0; i < PositiveNums.Length; i++)
+            //{
+            //    Console.WriteLine($"positive array: {PositiveNums[i]}");
+            //}
+
 
             #endregion
 
@@ -53,40 +60,39 @@ namespace task9
 
 
 
-        #region task1 method
+        #region task1 method 
 
 
-        //static int FindLetterIndex(int[] word, int letter)
+        //static int FindLetterIndex(string word, char letter)
         //{
         //    for (int i = 0; i < word.Length; i++)
         //    {
-        //        if (word[i] == letter) 
-        //        return 2;
-
-        //    else
-        //    {
-        //        return -1;
+        //        if (word[i] == letter)
+        //        {
+        //            return i;
+        //        }
         //    }
-
+        //    return -1;
         //}
+
         #endregion
 
 
         #region task2 method    
 
-        static int FindSqrt(int num)        //OKAY
-        {
-            int root = 0;
-          if (num > 0)
-          {
-                for (int i = 0; i * i <= num; i++)
-            {
-                root = i;
-            }
-          }
-           
-               return root;
-        }
+        //static int FindSqrt(int num)        
+        //{
+        //    int root = 0;
+        //    if (num > 0)
+        //    {
+        //        for (int i = 0; i * i <= num; i++)
+        //        {
+        //            root = i;
+        //        }
+        //    }
+
+        //    return root;
+        //}
         #endregion
 
 
@@ -97,7 +103,7 @@ namespace task9
 
         //    int s = 0;
         //    int N = number;
-        //    while (N>0)
+        //    while (N > 0)
         //    {
         //        s = s + (N % 10);
         //        N = N / 10;
@@ -118,34 +124,29 @@ namespace task9
         //        if (arr[i] > max)
         //        {
         //            max = arr[i];
-        //            return arr[i];
         //        }
-
         //    }
-        //    return 1;
-
+        //    return max;
         //}
         #endregion
 
 
         #region task5 method
 
-        //static int MakePositive(int[] numbers)
+        //static int[] MakePositive(int[] numbers)
         //{
         //    for (int i = 0; i < numbers.Length; i++)
         //    {
-        //        if (numbers[i]<0)
+        //        if (numbers[i] < 0)
         //        {
         //            numbers[i] = -(numbers[i]);
-        //            return numbers[i];
         //        }
-        //        else
-        //        {
-        //            return -1; //bilmedim ne yazim eks halda
-        //        }
+
         //    }
+        //    return numbers; 
 
         //}
+
         #endregion
 
 
